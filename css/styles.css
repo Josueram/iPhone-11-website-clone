@@ -204,6 +204,7 @@ a {
   display: flex;
   width: 100%;
   height: 100vh;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   background-color: #111111;
@@ -310,6 +311,7 @@ a {
 
 /* Media query mobile */
 @media (max-width: 768px) {
+  /* menu hamburger */
   .hamburger {
     display: block;
   }
@@ -346,7 +348,8 @@ a {
   .iphone-info .paragraph {
     display: none;
   }
-
+  
+  /* Section one */
   .section-iphone {
     height: 80vh;
   }
@@ -363,10 +366,11 @@ a {
     background-size: cover;
     align-self: center;
   }
-
+  
+  /* Section two */
   .container-info {
     width: 90%;
-    height: 690px;
+    height: 95%;
     align-items: flex-start;
   }
 
@@ -401,5 +405,37 @@ a {
 
   .container-info-links a {
     margin: 10px 0;
+  }
+
+  /* Section three */
+  .grid-one {
+    width: 43%;
+    height: 50%;
+  }
+
+  .grid-two {
+    width: 43%;
+    height: 50%;
+  }
+
+  .grid-container:nth-child(3) {
+    width: 90%;
+    height: 45%;
+  }
+
+  /* Section four */
+  .section-dual-info {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .info {
+    width: 90%;
+    height: 50%;
+  }
+
+  .img-info-iphone {
+    width: 90%;
+    height: 45%;
   }
 }
